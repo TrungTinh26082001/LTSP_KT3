@@ -167,10 +167,11 @@
             android:layout_height="match_parent"
             android:layout_weight="2.5"
             android:layout_marginTop="5dp"
-            android:textColor="#ffffff"
+            android:textColor="@color/white"
             android:textStyle="bold"
-            android:textSize="10sp"
-
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:background="@drawable/khuong_buttonkt1"
             android:text="Cập nhật" />
 
         <TextView
@@ -185,10 +186,11 @@
             android:layout_height="match_parent"
             android:layout_weight="2.5"
             android:layout_marginTop="5dp"
-            android:textColor="#ffffff"
+            android:textColor="@color/white"
             android:textStyle="bold"
-            android:textSize="10sp"
-
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:background="@drawable/khuong_buttonkt1"
             android:text="Làm lại" />
 
         <TextView

@@ -26,7 +26,7 @@ public class ListView1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_view1);
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle("ListView1");
+        actionBar.setTitle("ListView 1");
         actionBar.setDisplayHomeAsUpEnabled(true);
         addControls();
         addtvents();
@@ -60,16 +60,17 @@ public class ListView1 extends AppCompatActivity {
             case android.R.id.home:
                 onBackPressed();
                 return true;
-            case R.id.menu1:
-                Toast.makeText(this,"Bạn vừa chọn menu 1",Toast.LENGTH_LONG).show();
-                //code xử lý khi bấm menu1
-                break;
-            case R.id.menu2:
-                Toast.makeText(this,"Bạn vừa chọn menu 2",Toast.LENGTH_LONG).show();
-                //code xử lý khi bấm menu2
-                break;
             case R.id.menu3:
                 i = new Intent(ListView1.this, MainActivity_KT3.class);
+                startActivity(i);
+                //code xử lý khi bấm menu3
+                break;
+//            case R.id.menu2:
+//                Toast.makeText(this,"Bạn vừa chọn menu 2",Toast.LENGTH_LONG).show();
+//                //code xử lý khi bấm menu2
+//                break;
+            case R.id.menu1:
+                i = new Intent(ListView1.this, TTSVMainActivity.class);
                 startActivity(i);
                 //code xử lý khi bấm menu3
                 break;
